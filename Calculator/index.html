@@ -1,0 +1,83 @@
+<html>
+	<head>
+		
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+		<link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon.ico">
+		<title>Milestone calculator</title>
+		
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- optional. For more beautiful ui and anmations -->
+		<link rel="stylesheet" type="text/css" href="css/mdb.min.css">
+		<!-- for icon fonts. not optional-->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		</head>
+	<body style="background-image: url(Assets/background.jpg);
+		background-repeat: no-repeat;background-size: cover;">
+
+		
+	<!-- welcome box positioned at the center of the page -->
+	<!-- WELCOME BOX -->
+	<div class="welcome">
+		<div class="box bg-colorful">
+			<center>
+				<img src="Assets/favicon.ico" class="welcome-logo" />
+				<h3>MILESTONE<sup><small>TM</small></sup></h3>
+				<!-- this button opens the modal dialog when clicked -->
+				<!-- you can either click or hover the button. See Js code for more info-->
+				<button class="btn btn-lg btn-success" id="openModal">Open form</button>
+			</center>
+		</div>
+	</div>
+	<!-- END OF WELCOME BOX -->
+	<div id="modal-holder" class="modal">
+
+		<div id="container">
+			<div id="calculator">
+				<div style="display: inline-flex;">
+					<img src="Assets/favicon.ico" alt="Logo">
+				<h6 style="padding-left: 30px;margin-top: 10px; color:black;font-style:unset;">MILESTONE CALCULATOR</h6>
+				<span class="close" id="close-btn" style="cursor:pointer; float: right; margin-left: 10px;color: red;">&times;</span>     
+				</div>
+				<hr>
+				<div id="result">
+					<div id="history">
+						<p id="history-value"></p>
+					</div>
+					<div id="output">
+						<p id="output-value"></p>
+					</div>
+				</div>
+				<div id="keyboard">
+					<button class="operator" id="clear">C</button>
+					<button class="operator" id="backspace">DEL</button>
+					<button class="operator" id="%">%</button>
+					<button class="operator" id="/">&#247;</button>
+					<button class="number" id="7">7</button>
+					<button class="number" id="8">8</button>
+					<button class="number" id="9">9</button>
+					<button class="operator" id="*">&times;</button>
+					<button class="number" id="4">4</button>
+					<button class="number" id="5">5</button>
+					<button class="number" id="6">6</button>
+					<button class="operator" id="-">-</button>
+					<button class="number" id="1">1</button>
+					<button class="number" id="2">2</button>
+					<button class="number" id="3">3</button>
+					<button class="operator" id="+">+</button>
+					<button class="empty" id="empty"></button>
+					<button class="number" id="0">0</button>
+					<button class="empty" id="empty"></button>
+					<button class="operator" id="=">=</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+		<script src="Js/script.js"></script>
+		<script type="text/javascript" src="Js/JQUERY.js"></script>
+	
+	</body>
+</html>
